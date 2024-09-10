@@ -53,9 +53,9 @@ export default function Hero() {
                 </div>
             </div>
 
-            <div className="relative w-3/4 h-96 mx-auto my-auto hidden md:block" ref={containerRef}>
+            <div className="relative hidden md:block" ref={containerRef}>
                 <Image
-                    src={'/brownie.png'}
+                    src={'/spinner-logo.png'}
                     layout={'fill'}
                     objectFit={'contain'}
                     alt="Brownie"
