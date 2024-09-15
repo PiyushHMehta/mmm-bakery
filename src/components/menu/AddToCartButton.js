@@ -7,7 +7,7 @@ export default function AddToCartButton({ image, basePrice, hasOptions, onAddToC
             <div className='flying-button-parent mt-4' onClick={onAddToCart}>
                 <FlyingButton src={image} alt='image' targetTop={'5%'} targetLeft={'95%'}>
                     <div className='w-full flex justify-center'>
-                        Add to cart ${basePrice}
+                        Add to cart ₹{basePrice}
                     </div>
                 </FlyingButton>
             </div>
@@ -17,7 +17,7 @@ export default function AddToCartButton({ image, basePrice, hasOptions, onAddToC
     return (
         <button type="button" onClick={onAddToCart}
             className="mt-4 bg-primary rounded-full text-white px-8 py-2">
-            <span>Add to cart ${basePrice} onwards</span>
+            <span>Add to cart ₹{basePrice} onwards</span>
         </button>
     )
 }

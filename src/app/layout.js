@@ -8,10 +8,10 @@ import Head from "next/head";
 const roboto = Roboto({ subsets: ["latin"], weight: ['400', '500', '700'] });
 
 export const metadata = {
-  title: "Delicious Brownies and Waffles - MMM Bakery",
-  description: "Indulge in freshly baked brownies and waffles at MMM Bakery. Perfectly crafted for every sweet tooth!",
-  keywords: "brownies, waffles, bakery, MMM Bakery, fresh baked goods",
-  author: "MMM Bakery",
+  title: "Delicious Brownies and Waffles - Sapna Delights",
+  description: "Indulge in freshly baked brownies and waffles at Sapna Delights. Perfectly crafted for every sweet tooth!",
+  keywords: "brownies, waffles, bakery, Sapna Delights, fresh baked goods",
+  author: "Sapna Delights",
 };
 
 export default function RootLayout({ children }) {
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Bakery",
-              name: "MMM Bakery",
+              name: "Sapna Delights",
               url: "https://mmm-bakery.vercel.app/",
               description: metadata.description,
               servesCuisine: "Bakery Items",
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
             <Header />
             {children}
             <footer className="border-t p-8 text-center text-gray-500 mt-16">
-              &copy; 2024, All Rights Reserved MMM Bakery
+              &copy; 2024, All Rights Reserved Sapna Delights
             </footer>
           </AppProvider>
         </main>

@@ -100,7 +100,7 @@ export default function Orders() {
                                             {item.toppings.length > 0 ? item.toppings.map(topping => topping.name).join(', ') : 'None'}
                                         </td>
                                         <td className="px-4 py-2">{item.size ? item.size.name : 'Default'}</td>
-                                        <td className="px-4 py-2">${cartItemsPrice(item).toFixed(2)}</td>
+                                        <td className="px-4 py-2">₹{cartItemsPrice(item).toFixed(2)}</td>
                                         {itemIndex === 0 && (
                                             <td className="px-4 py-2" rowSpan={order.cartItems.length}>
                                                 {formatDistanceToNow(new Date(order.createdAt), { addSuffix: true })}

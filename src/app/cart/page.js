@@ -252,14 +252,14 @@ export default function CartPage() {
                                         <div>
                                             {item.toppings.map(topping => (
                                                 <div key={topping.name} className="text-sm text-gray-500">
-                                                    Extra {topping.name} ${topping.price}
+                                                    Extra {topping.name} ₹{topping.price}
                                                 </div>
                                             ))}
                                         </div>
                                     )}
                                 </div>
                                 <div className="text-lg font-semibold">
-                                    ${cartItemsPrice(item)}
+                                    ₹{cartItemsPrice(item)}
                                 </div>
                                 <div className="ml-2">
                                     <button onClick={() => removeCartItem(index)} type="button" className="p-2"><Trash /></button>
@@ -269,7 +269,7 @@ export default function CartPage() {
                     )}
                     <div className="py-4 text-lg text-right">
                         Total:&nbsp;
-                        <span className="font-semibold">${totalPrice}</span>
+                        <span className="font-semibold">₹{totalPrice}</span>
                     </div>
                 </div>
 
@@ -277,7 +277,7 @@ export default function CartPage() {
                     <h2 className="text-lg font-semibold">Checkout</h2>
                     <form onSubmit={proceedToCheckout}>
                         <AddressInputs addressProps={address} setAddressProps={handleAddressChange} />
-                        <button className="primary" disabled={cartItems.length === 0}>Pay ${totalPrice}</button>
+                        <button className="primary" disabled={cartItems.length === 0}>Pay ₹{totalPrice}</button>
                     </form>
                 </div>
             </div>

@@ -86,7 +86,7 @@ export default function UserOrders() {
                                 </div>
                                 <div className="flex justify-between">
                                     <div className="text-sm font-medium text-primary">Price:</div>
-                                    <div className="text-sm">${cartItemsPrice(item).toFixed(2)}</div>
+                                    <div className="text-sm">₹{cartItemsPrice(item).toFixed(2)}</div>
                                 </div>
                                 {itemIndex === 0 && (
                                     <div className="flex justify-between">

@@ -66,7 +66,7 @@ export default function MenuItem(menuItem) {
                                                         checked={selectedSize?.name === size.name}
                                                         onChange={() => setSelectedSize(size)}
                                                     />
-                                                    {size.name} ${basePrice + size.price}
+                                                    {size.name}₹ {basePrice + size.price}
                                                 </label>
                                             ))
                                         }
@@ -83,7 +83,7 @@ export default function MenuItem(menuItem) {
                                                     <input type="checkbox" name="topping"
                                                         onChange={ev => handleToppings(ev, topping)}
                                                     />
-                                                    Extra {topping.name} ${topping.price}
+                                                    Extra {topping.name} ₹{topping.price}
                                                 </label>
                                             ))
                                         }
@@ -96,7 +96,7 @@ export default function MenuItem(menuItem) {
                                 src={image}>
                                 <div className="w-full primary text-primary sticky bottom-2 flex justify-center"
                                     onClick={handleAddToCart}>
-                                    <span className="w-full flex justify-center">Add to cart ${selectedPrice}</span>
+                                    <span className="w-full flex justify-center">Add to cart ₹{selectedPrice}</span>
                                 </div>
                             </FlyingButton>
 
