@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:image" content="/bakery-logo.png" />
-        <meta property="og:url" content="https://mmm-bakery.vercel.app/" />
+        <meta property="og:url" content="https://sapna-delights.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={metadata.title} />
         <meta name="twitter:description" content={metadata.description} />
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Bakery",
               name: "Sapna Delights",
-              url: "https://mmm-bakery.vercel.app/",
+              url: "https://sapna-delights.vercel.app/",
               description: metadata.description,
               servesCuisine: "Bakery Items",
               address: {
